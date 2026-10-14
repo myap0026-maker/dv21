@@ -1,0 +1,12 @@
+const opts = {actions:false, renderer:'svg'};
+vegaEmbed('#vis01', 'visualisations/01-waffle.json', opts).catch(console.error);
+vegaEmbed('#vis02', 'visualisations/02-beekeepers.json', opts).catch(console.error);
+vegaEmbed('#vis03', 'visualisations/03-choropleth.json', opts).catch(console.error);
+vegaEmbed('#vis04', 'visualisations/04-proportional-map.json', opts).catch(console.error);
+vegaEmbed('#vis05', 'visualisations/05-state-heatmap.json', opts).catch(console.error);
+vegaEmbed('#vis06', 'visualisations/06-public-land.json', opts).catch(console.error);
+vegaEmbed('#vis07', 'visualisations/07-state-profile.json', opts).catch(console.error);
+vegaEmbed('#vis08', 'visualisations/08-apiary-dot-map.json', opts).catch(console.error);
+vegaEmbed('#vis09', 'visualisations/09-trade-lines.json', opts).catch(console.error);
+vegaEmbed('#vis10', 'visualisations/10-trade-balance.json', opts).catch(console.error);
+vegaEmbed('#vis11', 'visualisations/11-trade-heatmap.json', opts).catch(console.error);

@@ -1,0 +1,679 @@
+{
+  "title": {
+    "text": "Commercial beekeepers are a small minority",
+    "subtitle": "Each square represents roughly one percent of Australian beekeepers.",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 260,
+  "data": {
+    "values": [
+      {
+        "cell": 1,
+        "col": 0,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 2,
+        "col": 1,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 3,
+        "col": 2,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 4,
+        "col": 3,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 5,
+        "col": 4,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 6,
+        "col": 5,
+        "row": 9,
+        "Type": "Commercial"
+      },
+      {
+        "cell": 7,
+        "col": 6,
+        "row": 9,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 8,
+        "col": 7,
+        "row": 9,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 9,
+        "col": 8,
+        "row": 9,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 10,
+        "col": 9,
+        "row": 9,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 11,
+        "col": 0,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 12,
+        "col": 1,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 13,
+        "col": 2,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 14,
+        "col": 3,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 15,
+        "col": 4,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 16,
+        "col": 5,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 17,
+        "col": 6,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 18,
+        "col": 7,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 19,
+        "col": 8,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 20,
+        "col": 9,
+        "row": 8,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 21,
+        "col": 0,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 22,
+        "col": 1,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 23,
+        "col": 2,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 24,
+        "col": 3,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 25,
+        "col": 4,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 26,
+        "col": 5,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 27,
+        "col": 6,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 28,
+        "col": 7,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 29,
+        "col": 8,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 30,
+        "col": 9,
+        "row": 7,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 31,
+        "col": 0,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 32,
+        "col": 1,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 33,
+        "col": 2,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 34,
+        "col": 3,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 35,
+        "col": 4,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 36,
+        "col": 5,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 37,
+        "col": 6,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 38,
+        "col": 7,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 39,
+        "col": 8,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 40,
+        "col": 9,
+        "row": 6,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 41,
+        "col": 0,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 42,
+        "col": 1,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 43,
+        "col": 2,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 44,
+        "col": 3,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 45,
+        "col": 4,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 46,
+        "col": 5,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 47,
+        "col": 6,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 48,
+        "col": 7,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 49,
+        "col": 8,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 50,
+        "col": 9,
+        "row": 5,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 51,
+        "col": 0,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 52,
+        "col": 1,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 53,
+        "col": 2,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 54,
+        "col": 3,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 55,
+        "col": 4,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 56,
+        "col": 5,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 57,
+        "col": 6,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 58,
+        "col": 7,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 59,
+        "col": 8,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 60,
+        "col": 9,
+        "row": 4,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 61,
+        "col": 0,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 62,
+        "col": 1,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 63,
+        "col": 2,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 64,
+        "col": 3,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 65,
+        "col": 4,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 66,
+        "col": 5,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 67,
+        "col": 6,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 68,
+        "col": 7,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 69,
+        "col": 8,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 70,
+        "col": 9,
+        "row": 3,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 71,
+        "col": 0,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 72,
+        "col": 1,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 73,
+        "col": 2,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 74,
+        "col": 3,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 75,
+        "col": 4,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 76,
+        "col": 5,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 77,
+        "col": 6,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 78,
+        "col": 7,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 79,
+        "col": 8,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 80,
+        "col": 9,
+        "row": 2,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 81,
+        "col": 0,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 82,
+        "col": 1,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 83,
+        "col": 2,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 84,
+        "col": 3,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 85,
+        "col": 4,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 86,
+        "col": 5,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 87,
+        "col": 6,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 88,
+        "col": 7,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 89,
+        "col": 8,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 90,
+        "col": 9,
+        "row": 1,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 91,
+        "col": 0,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 92,
+        "col": 1,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 93,
+        "col": 2,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 94,
+        "col": 3,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 95,
+        "col": 4,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 96,
+        "col": 5,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 97,
+        "col": 6,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 98,
+        "col": 7,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 99,
+        "col": 8,
+        "row": 0,
+        "Type": "Recreational"
+      },
+      {
+        "cell": 100,
+        "col": 9,
+        "row": 0,
+        "Type": "Recreational"
+      }
+    ]
+  },
+  "mark": {
+    "type": "square",
+    "size": 330,
+    "cornerRadius": 2
+  },
+  "encoding": {
+    "x": {
+      "field": "col",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null,
+      "sort": "descending"
+    },
+    "color": {
+      "field": "Type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Commercial",
+          "Recreational"
+        ],
+        "range": [
+          "#B96B22",
+          "#F1D9A6"
+        ]
+      },
+      "legend": {
+        "orient": "top",
+        "title": null
+      }
+    },
+    "tooltip": [
+      {
+        "field": "Type",
+        "type": "nominal"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    }
+  }
+}
