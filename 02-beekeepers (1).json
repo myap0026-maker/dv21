@@ -1,0 +1,105 @@
+{
+  "title": {
+    "text": "Where are public apiary sites located in NSW?",
+    "subtitle": "Dot map — each dot is a NSW Government public apiary-site record.",
+    "anchor": "start"
+  },
+  "width": 1040,
+  "height": 460,
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.STATE_NAME === 'New South Wales'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F4F0E7",
+        "stroke": "#8D8477",
+        "strokeWidth": 1.2
+      }
+    },
+    {
+      "data": {
+        "url": "https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/CAPMS/Apiary/MapServer/0/query?where=1%3D1&outFields=SiteName%2CSiteNumber%2CStatus&returnGeometry=true&outSR=4326&f=geojson&resultRecordCount=2000",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "calculate": "datum.geometry.coordinates[0]",
+          "as": "Longitude"
+        },
+        {
+          "calculate": "datum.geometry.coordinates[1]",
+          "as": "Latitude"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 18,
+        "opacity": 0.48,
+        "color": "#B96B22"
+      },
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "properties.SiteName",
+            "type": "nominal",
+            "title": "Apiary site"
+          },
+          {
+            "field": "properties.SiteNumber",
+            "type": "nominal",
+            "title": "Site number"
+          }
+        ]
+      }
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    }
+  }
+}

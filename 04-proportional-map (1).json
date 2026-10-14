@@ -1,0 +1,132 @@
+{
+  "title": {
+    "text": "Victoria and New South Wales lead beekeeper numbers",
+    "subtitle": "Registered beekeeper communities vary sharply between states.",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 290,
+  "data": {
+    "values": [
+      {
+        "State": "New South Wales",
+        "Commercial": 848,
+        "Recreational": 8499,
+        "Total": 9347,
+        "Hives": 297362,
+        "Apiary": 8500,
+        "HPB": 31.8
+      },
+      {
+        "State": "Queensland",
+        "Commercial": 309,
+        "Recreational": 4760,
+        "Total": 5069,
+        "Hives": 105495,
+        "Apiary": 6500,
+        "HPB": 20.8
+      },
+      {
+        "State": "South Australia",
+        "Commercial": 175,
+        "Recreational": 2284,
+        "Total": 2459,
+        "Hives": 69810,
+        "Apiary": 400,
+        "HPB": 28.4
+      },
+      {
+        "State": "Tasmania",
+        "Commercial": 38,
+        "Recreational": 238,
+        "Total": 276,
+        "Hives": 23750,
+        "Apiary": 2000,
+        "HPB": 86.1
+      },
+      {
+        "State": "Victoria",
+        "Commercial": 337,
+        "Recreational": 8899,
+        "Total": 9236,
+        "Hives": 123277,
+        "Apiary": 4000,
+        "HPB": 13.4
+      },
+      {
+        "State": "Western Australia",
+        "Commercial": 161,
+        "Recreational": 3142,
+        "Total": 3303,
+        "Hives": 48978,
+        "Apiary": 3200,
+        "HPB": 14.8
+      }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 5
+  },
+  "encoding": {
+    "y": {
+      "field": "State",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
+    },
+    "x": {
+      "field": "Total",
+      "type": "quantitative",
+      "title": "Beekeepers"
+    },
+    "color": {
+      "value": "#D7922E"
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "type": "nominal"
+      },
+      {
+        "field": "Total",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Commercial",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Recreational",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    }
+  }
+}

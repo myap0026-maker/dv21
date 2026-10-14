@@ -1,0 +1,80 @@
+{
+  "title": {
+    "text": "Where are Australia's hives concentrated?",
+    "subtitle": "Choropleth map — darker states contain more recorded hives.",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 370,
+  "projection": {
+    "type": "mercator"
+  },
+  "data": {
+    "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+    "format": {
+      "type": "json",
+      "property": "features"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.properties.STATE_NAME === 'New South Wales' ? 297362 : datum.properties.STATE_NAME === 'Queensland' ? 105495 : datum.properties.STATE_NAME === 'South Australia' ? 69810 : datum.properties.STATE_NAME === 'Tasmania' ? 23750 : datum.properties.STATE_NAME === 'Victoria' ? 123277 : datum.properties.STATE_NAME === 'Western Australia' ? 48978 : null",
+      "as": "Hives"
+    }
+  ],
+  "mark": {
+    "type": "geoshape",
+    "stroke": "white",
+    "strokeWidth": 1.2
+  },
+  "encoding": {
+    "color": {
+      "field": "Hives",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yelloworangebrown"
+      },
+      "legend": {
+        "title": "Recorded hives",
+        "format": "~s"
+      }
+    },
+    "tooltip": [
+      {
+        "field": "properties.STATE_NAME",
+        "type": "nominal",
+        "title": "State"
+      },
+      {
+        "field": "Hives",
+        "type": "quantitative",
+        "title": "Hives",
+        "format": ","
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    }
+  }
+}

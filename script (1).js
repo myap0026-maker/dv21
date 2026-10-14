@@ -1,4 +1,4 @@
-const opts = {actions:{source:false,compiled:false,editor:true}, renderer:'svg'};
+const opts = {actions:false, renderer:'svg'};
 vegaEmbed('#vis01', 'visualisations/01-waffle.json', opts).catch(console.error);
 vegaEmbed('#vis02', 'visualisations/02-beekeepers.json', opts).catch(console.error);
 vegaEmbed('#vis03', 'visualisations/03-choropleth.json', opts).catch(console.error);
