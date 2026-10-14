@@ -1,0 +1,138 @@
+{
+  "title": {
+    "text": "Public-land dependence increased",
+    "subtitle": "Queensland shows the largest measured rise between 2014–15 and 2019.",
+    "anchor": "start"
+  },
+  "width": 500,
+  "height": 340,
+  "data": {
+    "values": [
+      {
+        "State": "New South Wales",
+        "Year": "2014-15",
+        "Share": 0.41
+      },
+      {
+        "State": "New South Wales",
+        "Year": 2019,
+        "Share": 0.45
+      },
+      {
+        "State": "Queensland",
+        "Year": "2014-15",
+        "Share": 0.28
+      },
+      {
+        "State": "Queensland",
+        "Year": 2019,
+        "Share": 0.8
+      },
+      {
+        "State": "South Australia",
+        "Year": "2014-15",
+        "Share": 0.07
+      },
+      {
+        "State": "Tasmania",
+        "Year": "2014-15",
+        "Share": 0.82
+      },
+      {
+        "State": "Tasmania",
+        "Year": 2019,
+        "Share": 0.9
+      },
+      {
+        "State": "Victoria",
+        "Year": "2014-15",
+        "Share": 0.58
+      },
+      {
+        "State": "Victoria",
+        "Year": 2019,
+        "Share": 0.7
+      },
+      {
+        "State": "Western Australia",
+        "Year": "2014-15",
+        "Share": 0.63
+      },
+      {
+        "State": "Western Australia",
+        "Year": 2019,
+        "Share": 0.8
+      }
+    ]
+  },
+  "mark": {
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 90
+    },
+    "strokeWidth": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "Year",
+      "type": "ordinal",
+      "title": null
+    },
+    "y": {
+      "field": "Share",
+      "type": "quantitative",
+      "title": "Public-land share",
+      "axis": {
+        "format": ".0%"
+      }
+    },
+    "color": {
+      "field": "State",
+      "type": "nominal",
+      "title": "State"
+    },
+    "detail": {
+      "field": "State"
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "type": "nominal"
+      },
+      {
+        "field": "Year",
+        "type": "ordinal"
+      },
+      {
+        "field": "Share",
+        "type": "quantitative",
+        "format": ".0%"
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 34
+    }
+  }
+}

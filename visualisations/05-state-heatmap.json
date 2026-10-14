@@ -1,0 +1,70 @@
+{
+  "width": 275,
+  "height": 100,
+  "data": {
+    "values": [
+      {
+        "Label": "Beekeepers",
+        "Value": "29,690"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 28,
+        "fontWeight": "bold",
+        "dy": -12
+      },
+      "encoding": {
+        "text": {
+          "field": "Value",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "fontSize": 13,
+        "dy": 22
+      },
+      "encoding": {
+        "text": {
+          "field": "Label",
+          "type": "nominal"
+        }
+      }
+    }
+  ],
+  "view": {
+    "stroke": "#D8C6A1",
+    "cornerRadius": 8,
+    "fill": "#FFF9EE"
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 34
+    }
+  }
+}
