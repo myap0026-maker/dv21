@@ -4,7 +4,7 @@
     "subtitle": "Dot map — each dot is a NSW Government public apiary-site record.",
     "anchor": "start"
   },
-  "width": 1040,
+  "width": 900,
   "height": 460,
   "projection": {
     "type": "mercator"
@@ -78,7 +78,7 @@
       }
     }
   ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
     "font": "Arial",
     "axis": {

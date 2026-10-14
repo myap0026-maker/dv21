@@ -4,7 +4,7 @@
     "subtitle": "Australia’s honey and beeswax trade changed substantially between 1996 and 2020.",
     "anchor": "start"
   },
-  "width": 1040,
+  "width": 900,
   "height": 330,
   "data": {
     "values": [
@@ -312,7 +312,7 @@
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
     "font": "Arial",
     "axis": {

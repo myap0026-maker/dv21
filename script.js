@@ -1,12 +1,23 @@
-const opts = {actions:false, renderer:'svg'};
-vegaEmbed('#vis01', 'visualisations/01-waffle.json', opts).catch(console.error);
-vegaEmbed('#vis02', 'visualisations/02-beekeepers.json', opts).catch(console.error);
-vegaEmbed('#vis03', 'visualisations/03-choropleth.json', opts).catch(console.error);
-vegaEmbed('#vis04', 'visualisations/04-proportional-map.json', opts).catch(console.error);
-vegaEmbed('#vis05', 'visualisations/05-state-heatmap.json', opts).catch(console.error);
-vegaEmbed('#vis06', 'visualisations/06-public-land.json', opts).catch(console.error);
-vegaEmbed('#vis07', 'visualisations/07-state-profile.json', opts).catch(console.error);
-vegaEmbed('#vis08', 'visualisations/08-apiary-dot-map.json', opts).catch(console.error);
-vegaEmbed('#vis09', 'visualisations/09-trade-lines.json', opts).catch(console.error);
-vegaEmbed('#vis10', 'visualisations/10-trade-balance.json', opts).catch(console.error);
-vegaEmbed('#vis11', 'visualisations/11-trade-heatmap.json', opts).catch(console.error);
+const opts = {actions:false, renderer:"svg"};
+const charts = [
+"01-waffle.json",
+"02-beekeepers.json",
+"03-choropleth.json",
+"04-proportional-map.json",
+"05-state-heatmap.json",
+"06-public-land.json",
+"07-state-profile.json",
+"08-apiary-dot-map.json",
+"09-trade-lines.json",
+"10-trade-balance.json",
+"11-trade-heatmap.json"
+];
+charts.forEach((file, i) => {
+  const id = "#vis" + String(i + 1).padStart(2, "0");
+  vegaEmbed(id, "visualisations/" + file, opts)
+    .catch(err => {
+      console.error(file, err);
+      document.querySelector(id).innerHTML =
+        "<p style='padding:20px'>Chart failed to load: " + file + "</p>";
+    });
+});
