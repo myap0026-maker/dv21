@@ -1,0 +1,226 @@
+{
+  "title": {
+    "text": "State beekeeping profile",
+    "subtitle": "Darker cells indicate higher values within each metric.",
+    "anchor": "start"
+  },
+  "width": 900,
+  "height": 280,
+  "data": {
+    "values": [
+      {
+        "State": "New South Wales",
+        "Metric": "Total",
+        "Value": 9347,
+        "Normalized": 1
+      },
+      {
+        "State": "Queensland",
+        "Metric": "Total",
+        "Value": 5069,
+        "Normalized": 0.5283871678976959
+      },
+      {
+        "State": "South Australia",
+        "Metric": "Total",
+        "Value": 2459,
+        "Normalized": 0.24065703891522433
+      },
+      {
+        "State": "Tasmania",
+        "Metric": "Total",
+        "Value": 276,
+        "Normalized": 0
+      },
+      {
+        "State": "Victoria",
+        "Metric": "Total",
+        "Value": 9236,
+        "Normalized": 0.9877632014110903
+      },
+      {
+        "State": "Western Australia",
+        "Metric": "Total",
+        "Value": 3303,
+        "Normalized": 0.33370080476242975
+      },
+      {
+        "State": "New South Wales",
+        "Metric": "Hives",
+        "Value": 297362,
+        "Normalized": 1
+      },
+      {
+        "State": "Queensland",
+        "Metric": "Hives",
+        "Value": 105495,
+        "Normalized": 0.29876248117772614
+      },
+      {
+        "State": "South Australia",
+        "Metric": "Hives",
+        "Value": 69810,
+        "Normalized": 0.16834056985804716
+      },
+      {
+        "State": "Tasmania",
+        "Metric": "Hives",
+        "Value": 23750,
+        "Normalized": 0
+      },
+      {
+        "State": "Victoria",
+        "Metric": "Hives",
+        "Value": 123277,
+        "Normalized": 0.3637523208046431
+      },
+      {
+        "State": "Western Australia",
+        "Metric": "Hives",
+        "Value": 48978,
+        "Normalized": 0.09220355832346534
+      },
+      {
+        "State": "New South Wales",
+        "Metric": "Apiary",
+        "Value": 8500,
+        "Normalized": 1
+      },
+      {
+        "State": "Queensland",
+        "Metric": "Apiary",
+        "Value": 6500,
+        "Normalized": 0.7530864197530864
+      },
+      {
+        "State": "South Australia",
+        "Metric": "Apiary",
+        "Value": 400,
+        "Normalized": 0
+      },
+      {
+        "State": "Tasmania",
+        "Metric": "Apiary",
+        "Value": 2000,
+        "Normalized": 0.19753086419753085
+      },
+      {
+        "State": "Victoria",
+        "Metric": "Apiary",
+        "Value": 4000,
+        "Normalized": 0.4444444444444444
+      },
+      {
+        "State": "Western Australia",
+        "Metric": "Apiary",
+        "Value": 3200,
+        "Normalized": 0.345679012345679
+      },
+      {
+        "State": "New South Wales",
+        "Metric": "HPB",
+        "Value": 31.8,
+        "Normalized": 0.2530949105914718
+      },
+      {
+        "State": "Queensland",
+        "Metric": "HPB",
+        "Value": 20.8,
+        "Normalized": 0.1017881705639615
+      },
+      {
+        "State": "South Australia",
+        "Metric": "HPB",
+        "Value": 28.4,
+        "Normalized": 0.2063273727647868
+      },
+      {
+        "State": "Tasmania",
+        "Metric": "HPB",
+        "Value": 86.1,
+        "Normalized": 1
+      },
+      {
+        "State": "Victoria",
+        "Metric": "HPB",
+        "Value": 13.4,
+        "Normalized": 0
+      },
+      {
+        "State": "Western Australia",
+        "Metric": "HPB",
+        "Value": 14.8,
+        "Normalized": 0.019257221458046776
+      }
+    ]
+  },
+  "mark": {
+    "type": "rect",
+    "cornerRadius": 3
+  },
+  "encoding": {
+    "x": {
+      "field": "Metric",
+      "type": "nominal",
+      "sort": [
+        "Total",
+        "Hives",
+        "Apiary",
+        "HPB"
+      ],
+      "title": null
+    },
+    "y": {
+      "field": "State",
+      "type": "nominal",
+      "title": null
+    },
+    "color": {
+      "field": "Normalized",
+      "type": "quantitative",
+      "scale": {
+        "scheme": "yelloworangebrown"
+      },
+      "title": "Relative level"
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "type": "nominal"
+      },
+      {
+        "field": "Metric",
+        "type": "nominal"
+      },
+      {
+        "field": "Value",
+        "type": "quantitative",
+        "format": ","
+      }
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#EEE8DC"
+    },
+    "legend": {
+      "labelFontSize": 11,
+      "titleFontSize": 12
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    }
+  }
+}
