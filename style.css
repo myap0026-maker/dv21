@@ -1,27 +1,2 @@
 *{box-sizing:border-box}body{margin:0;background:#fffdf8;color:#2b2118;font-family:"DM Sans",sans-serif}header,main{width:min(1080px,calc(100% - 36px));margin:auto}header{padding:72px 0 70px;border-bottom:1px solid #dfd2ba}.eyebrow,small{font-weight:700;letter-spacing:.15em;color:#a85f1b}h1,h2{font-family:Fraunces,serif}h1{font-size:clamp(3.5rem,8vw,7rem);line-height:.92;margin:16px 0}h1 span{color:#b96b22}.lead{font-size:1.2rem}.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}.kpis div{border:1px solid #dfd2ba;background:#fff9ee;padding:22px;border-radius:8px;text-transform:uppercase;font-size:.72rem;letter-spacing:.08em}.kpis b{display:block;font-family:Fraunces,serif;font-size:2rem;letter-spacing:0;text-transform:none;margin-bottom:3px}section{padding:80px 0;border-bottom:1px solid #dfd2ba}.chapter{margin-bottom:35px}.chapter h2,.end h2{font-size:clamp(2.5rem,5vw,4rem);margin:8px 0}.chart{width:100%;margin:0 0 38px;padding:22px;background:#fff9ee;border:1px solid #e2d4ba;overflow-x:auto}.chart:last-child{margin-bottom:0}.vega-embed{width:100%}.vega-embed summary{display:none}@media(max-width:700px){.kpis{grid-template-columns:1fr}header{padding-top:45px}.chart{padding:8px}section{padding:55px 0}}
 
-.end {
-    max-width: 900px;
-    margin: 100px auto 80px;
-    padding: 60px 40px;
-    text-align: center;
-}
-
-.end h2 {
-    margin-bottom: 30px;
-}
-
-.conclusion {
-    max-width: 760px;
-    margin: 0 auto 18px;
-    line-height: 1.8;
-    font-size: 1.05rem;
-}
-
-.final-note {
-    max-width: 700px;
-    margin: 35px auto 0;
-    font-family: "Fraunces", serif;
-    font-size: 1.25rem;
-    font-weight: 600;
-}
