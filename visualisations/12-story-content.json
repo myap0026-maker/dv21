@@ -26,7 +26,7 @@
       "label": "PEOPLE & PARTICIPATION",
       "title": "The People Behind the Hive",
       "question": "Who keeps Australia’s bees, and where are beekeepers concentrated?",
-      "answer": "Australia’s beekeeping community is dominated by recreational rather than commercial beekeepers. Participation is uneven across the country, with New South Wales and Victoria containing the largest registered beekeeper communities.",
+      "answer": "The story begins with the people who keep Australia’s bees. Recreational beekeepers make up the overwhelming majority of participants, but participation is not evenly distributed: New South Wales and Victoria contain the largest registered beekeeper communities. This establishes who is involved before the next section asks where their hives are concentrated.",
       "charts": [
         "01",
         "02"
@@ -38,7 +38,7 @@
       "label": "GEOGRAPHY & SCALE",
       "title": "A Country of Hives",
       "question": "Where are Australia’s hives concentrated, and how does operating scale differ by state?",
-      "answer": "Australia’s hives are not distributed evenly across the states. Normalising hive totals by land area changes the comparison, while operating intensity also differs strongly between states.",
+      "answer": "The story then moves from people to place. Looking at hive density, total hive scale and state profiles shows that different measures produce different leaders: Tasmania is highly dense and intensive, while New South Wales dominates several absolute measures. This geographic pattern leads into the question of what landscapes and access these beekeeping systems depend on.",
       "charts": [
         "03",
         "04",
@@ -51,7 +51,7 @@
       "label": "LANDSCAPE DEPENDENCE",
       "title": "Honey and the Landscape",
       "question": "How strongly does Australian beekeeping depend on access to public land?",
-      "answer": "Public land is an important part of the operating landscape for Australian beekeeping, although dependence differs substantially between states. The available observations show increasing reliance in several states, while NSW public apiary sites form a wide geographic network.",
+      "answer": "The story next examines the landscapes supporting beekeeping. Public-land dependence increased in several states, and the NSW dot map shows that public apiary sites are spread across a broad geographic area. Together, these visuals show that access to suitable land is part of the industry’s operating structure, before the final section follows honey into the market.",
       "charts": [
         "06",
         "07",
@@ -64,7 +64,7 @@
       "label": "TRADE OVER TIME",
       "title": "Australia in the Honey Trade",
       "question": "How did Australia move from strong export surpluses toward a much tighter trade position?",
-      "answer": "Australia’s honey trade position changed substantially across the period shown. Earlier export surpluses weakened as imports increased, and several years in the late 2010s recorded sizeable trade deficits.",
+      "answer": "The final section follows the industry into trade. Australia began the period with strong export surpluses, but imports grew substantially and produced sizeable deficits in several later years. The line chart, balance chart and heatmap together show a clear transition from an export-dominant position toward a more competitive and import-pressured market.",
       "charts": [
         "09",
         "10",
@@ -74,57 +74,57 @@
   ],
   "meta": {
     "01": [
-      "Commercial beekeepers are a small minority of registered beekeepers, showing that participation is dominated by recreational operators.",
+      "The beekeeper composition was analysed to compare commercial and recreational participation. Only about 6% of the squares represent commercial beekeepers, while roughly 94% represent recreational beekeepers, showing that the industry has a very broad recreational base.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "02": [
-      "New South Wales and Victoria have the largest registered beekeeper communities, while Tasmania has a much smaller beekeeper population.",
+      "Registered beekeeper numbers were compared across states. New South Wales records 9,347 beekeepers and Victoria 9,236, making them the two largest beekeeper communities, while Tasmania is much smaller with 276.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "03": [
-      "Normalising by land area changes the comparison: Tasmania has the highest recorded hive density, followed by Victoria and New South Wales.",
+      "Hive totals were normalised by state land area to compare hive density rather than absolute counts. Victoria records the highest density at about 542 hives per 1,000 km², followed by New South Wales at about 371 and Tasmania at about 347.",
       "ABARES · ABS · GeoJSON Data",
       "https://www.abs.gov.au/"
     ],
     "04": [
-      "Total hive numbers and hive intensity tell different stories: New South Wales leads in total hives, while Tasmania has far more hives per beekeeper.",
+      "Hive scale and beekeeper intensity were analysed together. New South Wales has the largest total number of hives at 297,362, but Tasmania records about 86.1 hives per beekeeper, showing that a state with fewer beekeepers can still have a much more intensive operating profile.",
       "ABARES · GeoJSON Data",
       "https://www.agriculture.gov.au/abares"
     ],
     "05": [
-      "No state leads every measure. New South Wales is strongest on several absolute measures, while Tasmania stands out for hives per beekeeper.",
+      "The state profiles were compared across beekeeper totals, hives, apiary access and hives per beekeeper. New South Wales is strongest on several absolute measures, while Tasmania stands out on hives per beekeeper, so no single state leads every dimension.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "06": [
-      "Public-land dependence increased in several states between the observations, with particularly high reliance visible in Queensland and Tasmania by 2019.",
+      "Public-land dependence was compared between the available 2014–15 and 2019 observations. Queensland shows the largest increase, from about 28% to 80%, while Tasmania rises from about 82% to 90%, indicating growing reliance on public land in several states.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "07": [
-      "States follow different operating structures rather than one national pattern; participation, hive scale, apiary access and intensity vary substantially.",
+      "The normalised state profiles were analysed to compare different beekeeping structures on the same scale. The lines do not follow one common pattern: states that are large in beekeeper or hive totals are not necessarily the strongest in apiary access or hives per beekeeper.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "08": [
-      "Public apiary sites are distributed widely across New South Wales, showing a broad geographic network of locations available to beekeeping.",
+      "The locations of NSW public apiary sites were mapped to examine their geographic spread. The dots extend across a wide area of New South Wales rather than forming a single cluster, showing that public apiary access is geographically dispersed.",
       "NSW Government · Public Apiary Sites",
       "https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/CAPMS/Apiary/MapServer/0"
     ],
     "09": [
-      "Exports were much larger than imports through most earlier years, but rising imports sharply narrowed the gap during the 2010s.",
+      "Import and export values from 1996 to 2020 were analysed to compare how Australia’s trade position changed over time. Exports were much higher in the earlier years, but imports rose strongly during the 2010s and exceeded exports in several later years.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "10": [
-      "Australia moved from repeated trade surpluses into substantial deficits during much of the late 2010s, before a small positive balance returned in 2020.",
+      "The trade balance was analysed as exports minus imports. Australia recorded large positive balances in many earlier years, but the balance became negative in 2014 and reached its largest deficit in 2016 at about AUD 34.9 million before returning slightly positive in 2020.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ],
     "11": [
-      "The year-by-year pattern shows the shift clearly: later years combine stronger imports with weaker or negative trade balances.",
+      "Imports, exports and trade balance were compared year by year to identify the changing trade regime. The later years show stronger import values together with weaker or negative balances, making the shift from export surplus toward import pressure visually clear.",
       "ABARES",
       "https://www.agriculture.gov.au/abares"
     ]
