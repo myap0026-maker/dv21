@@ -11,7 +11,7 @@
     "offset": 14
   },
   "width": "container",
-  "height": 430,
+  "height": 370,
   "projection": {
     "type": "mercator"
   },
@@ -107,11 +107,5 @@
         "#D9A66C"
       ]
     }
-  },
-  "padding": {
-    "left": 40,
-    "right": 85,
-    "top": 30,
-    "bottom": 45
   }
 }
