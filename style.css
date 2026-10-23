@@ -9,21 +9,11 @@ body {
   font-family: "DM Sans", sans-serif;
 }
 
-
-/* =========================
-   PAGE WIDTH
-========================= */
-
 header,
 main {
-  width: min(1080px, calc(100% - 36px));
+  width: min(1180px, calc(100% - 36px));
   margin: auto;
 }
-
-
-/* =========================
-   HERO
-========================= */
 
 header {
   padding: 72px 0 70px;
@@ -57,11 +47,6 @@ h1 span {
   color: #625448;
 }
 
-
-/* =========================
-   KPI CARDS
-========================= */
-
 .kpis {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -88,11 +73,6 @@ h1 span {
   margin-bottom: 3px;
 }
 
-
-/* =========================
-   SECTIONS
-========================= */
-
 section {
   padding: 80px 0;
   border-bottom: 1px solid #dfd2ba;
@@ -108,68 +88,68 @@ section {
   margin: 8px 0 16px;
 }
 
-
-/* =========================
-   SECTION STORY
-========================= */
-
 .section-story {
-  max-width: 820px;
+  max-width: 900px;
   margin: 18px 0 0;
   font-size: 1.05rem;
   line-height: 1.8;
   color: #625448;
 }
 
-
-/* =========================
-   VISUALISATIONS
-========================= */
-
 .chart {
   width: 100%;
+  padding: 30px 36px 28px;
   margin: 0;
-  padding: 22px;
   background: #fff9ee;
   border: 1px solid #e2d4ba;
-  overflow: hidden;
+  border-radius: 8px;
+  overflow: visible;
 }
 
 .vega-embed {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
+  display: block;
 }
 
+.vega-embed > div {
+  width: 100%;
+  max-width: 100%;
+}
 
-/* =========================
-   ANALYSIS BELOW CHART
-========================= */
+.vega-embed svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.vega-embed canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.vega-embed summary {
+  display: none;
+}
 
 .chart-analysis {
+  width: 100%;
   margin: 0 0 10px;
-  padding: 20px 22px;
-
+  padding: 20px 24px;
   background: #fff4dc;
-
   border-left: 4px solid #c47a16;
   border-right: 1px solid #e2d4ba;
   border-bottom: 1px solid #e2d4ba;
-
   font-size: .98rem;
   line-height: 1.75;
-
   color: #493b2e;
 }
 
-
-/* =========================
-   SOURCES
-========================= */
-
 .source {
-  margin: 10px 0 48px;
-
+  margin: 10px 0 52px;
   font-size: .8rem;
   color: #75685d;
 }
@@ -184,21 +164,15 @@ section {
   text-decoration: underline;
 }
 
-
-/* =========================
-   CONCLUSION
-========================= */
-
 .end {
   padding-bottom: 90px;
 }
 
-
-/* =========================
-   MOBILE
-========================= */
-
 @media (max-width: 700px) {
+  header,
+  main {
+    width: calc(100% - 24px);
+  }
 
   .kpis {
     grid-template-columns: 1fr;
@@ -213,11 +187,14 @@ section {
   }
 
   .chart {
-    padding: 8px;
+    padding: 20px 14px;
   }
 
   .chart-analysis {
-    padding: 16px;
+    padding: 16px 18px;
   }
 
+  .source {
+    margin-bottom: 40px;
+  }
 }

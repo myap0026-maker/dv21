@@ -11,6 +11,11 @@
     "offset": 14
   },
   "width": "container",
+  "autosize": {
+  "type": "fit",
+  "contains": "padding",
+  "resize": true
+},
   "height": 460,
   "projection": {
     "type": "mercator"

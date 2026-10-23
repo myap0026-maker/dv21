@@ -12,6 +12,11 @@
   },
   "width": "container",
   "height": 280,
+  "autosize": {
+  "type": "fit",
+  "contains": "padding",
+  "resize": true
+},
   "data": {
     "values": [
       {

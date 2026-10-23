@@ -11,6 +11,11 @@
     "subtitleFontWeight": "normal"
   },
   "width": "container",
+  "autosize": {
+  "type": "fit",
+  "contains": "padding",
+  "resize": true
+},
   "height": 340,
   "data": {
     "values": [

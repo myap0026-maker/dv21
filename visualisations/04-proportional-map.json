@@ -12,6 +12,11 @@
   },
   "width": "container",
   "height": 370,
+  "autosize": {
+  "type": "fit",
+  "contains": "padding",
+  "resize": true
+},
   "projection": {
     "type": "mercator"
   },

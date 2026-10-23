@@ -15,8 +15,13 @@
     "offset": 15
   },
 
-  "width": 620,
+  "width": "container",
   "height": 300,
+  "autosize": {
+  "type": "fit",
+  "contains": "padding",
+  "resize": true
+},
 
   "data": {
     "values": [
