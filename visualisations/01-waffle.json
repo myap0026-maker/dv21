@@ -1,80 +1,113 @@
 {
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "background": "#FFFDF8",
+
   "title": {
-    "text": "01 · THE PEOPLE BEHIND THE HIVE",
-    "subtitle": "Who keeps Australia’s bees, and where are beekeepers concentrated?",
+    "text": "01 · Commercial beekeepers are a small minority",
+    "subtitle": "Each square represents approximately 1% of registered Australian beekeepers.",
     "anchor": "start",
-    "fontSize": 26,
-    "subtitleFontSize": 14,
-    "offset": 12,
-    "subtitleColor": "#6D6257"
+    "fontSize": 21,
+    "fontWeight": "bold",
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": "normal",
+    "subtitleColor": "#6D6257",
+    "offset": 14
   },
-  "width": "container",
-  "height": 1,
+
+  "width": 700,
+  "height": 280,
+
   "data": {
-    "values": [
+    "sequence": {
+      "start": 0,
+      "stop": 100,
+      "step": 1,
+      "as": "id"
+    }
+  },
+
+  "transform": [
+    {
+      "calculate": "datum.id % 10",
+      "as": "column"
+    },
+    {
+      "calculate": "floor(datum.id / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.id < 6 ? 'Commercial' : 'Recreational'",
+      "as": "Beekeeper type"
+    }
+  ],
+
+  "mark": {
+    "type": "square",
+    "size": 360,
+    "cornerRadius": 2
+  },
+
+  "encoding": {
+    "x": {
+      "field": "column",
+      "type": "ordinal",
+      "axis": null
+    },
+
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null,
+      "sort": "ascending"
+    },
+
+    "color": {
+      "field": "Beekeeper type",
+      "type": "nominal",
+      "scale": {
+        "domain": [
+          "Commercial",
+          "Recreational"
+        ],
+        "range": [
+          "#C47A16",
+          "#E7C98D"
+        ]
+      },
+      "legend": {
+        "title": "Beekeeper type",
+        "orient": "bottom",
+        "direction": "horizontal"
+      }
+    },
+
+    "tooltip": [
       {
-        "x": 0
+        "field": "Beekeeper type",
+        "type": "nominal",
+        "title": "Beekeeper type"
       }
     ]
   },
-  "mark": {
-    "type": "point",
-    "opacity": 0
-  },
-  "encoding": {
-    "x": {
-      "field": "x",
-      "type": "quantitative",
-      "axis": null
-    }
-  },
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
-  "background": "#FFFDF8",
-  "autosize": {
-    "type": "fit",
-    "contains": "padding",
-    "resize": true
-  },
+
   "config": {
     "font": "Arial",
-    "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "gridColor": "#E8DFD1",
-      "labelColor": "#5C5147",
-      "titleColor": "#493D32",
-      "domainColor": "#BDAF9E",
-      "tickColor": "#BDAF9E"
+
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "color": "#3F3023"
     },
+
     "legend": {
-      "labelFontSize": 11,
+      "labelFontSize": 12,
       "titleFontSize": 12,
       "labelColor": "#5C5147",
       "titleColor": "#493D32"
     },
-    "title": {
-      "font": "Arial",
-      "subtitleFont": "Arial",
-      "anchor": "start",
-      "color": "#3F3023",
-      "subtitleColor": "#65584A"
-    },
+
     "view": {
       "stroke": null
-    },
-    "concat": {
-      "spacing": 30
-    },
-    "background": "#FFFDF8",
-    "range": {
-      "category": [
-        "#C47A16",
-        "#2F6F9F",
-        "#E2B84B",
-        "#6C5A49",
-        "#7E9DB5",
-        "#D9A66C"
-      ]
     }
   }
 }
