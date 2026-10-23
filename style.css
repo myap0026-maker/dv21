@@ -129,12 +129,10 @@ section {
 .chart {
   width: 100%;
   margin: 0 0 24px;
-  padding: 35px 45px 45px;
+  padding: 30px 36px 36px;
   background: #fff9ee;
   border: 1px solid #e2d4ba;
-  border-radius: 8px;
-  overflow: visible;
-  position: relative;
+  overflow: hidden;
 }
 
 .vega-embed {

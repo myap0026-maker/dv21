@@ -1,80 +1,112 @@
 {
-  "title": {
-    "text": "01 · THE PEOPLE BEHIND THE HIVE",
-    "subtitle": "Who keeps Australia’s bees, and where are beekeepers concentrated?",
-    "anchor": "start",
-    "fontSize": 26,
-    "subtitleFontSize": 14,
-    "offset": 12,
-    "subtitleColor": "#6D6257"
-  },
-  "width": "container",
-  "height": 1,
-  "data": {
-    "values": [
-      {
-        "x": 0
-      }
-    ]
-  },
-  "mark": {
-    "type": "point",
-    "opacity": 0
-  },
-  "encoding": {
-    "x": {
-      "field": "x",
-      "type": "quantitative",
-      "axis": null
-    }
-  },
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "background": "#FFFDF8",
+  "width": "container",
+  "height": 300,
+  "padding": {
+    "left": 25,
+    "right": 25,
+    "top": 20,
+    "bottom": 35
+  },
   "autosize": {
     "type": "fit",
     "contains": "padding",
     "resize": true
   },
+  "title": {
+    "text": "01 · Commercial beekeepers are a small minority",
+    "subtitle": "Each square represents approximately 1% of registered Australian beekeepers.",
+    "anchor": "start",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal",
+    "offset": 16
+  },
+  "data": {
+    "sequence": {
+      "start": 0,
+      "stop": 100,
+      "step": 1,
+      "as": "id"
+    }
+  },
+  "transform": [
+    {
+      "calculate": "datum.id % 10",
+      "as": "column"
+    },
+    {
+      "calculate": "floor(datum.id / 10)",
+      "as": "row"
+    },
+    {
+      "calculate": "datum.id < 6 ? 'Commercial' : 'Recreational'",
+      "as": "BeekeeperType"
+    }
+  ],
+  "mark": {
+    "type": "square",
+    "size": 430,
+    "stroke": "#FFFDF8",
+    "strokeWidth": 1
+  },
+  "encoding": {
+    "x": {
+      "field": "column",
+      "type": "ordinal",
+      "axis": null
+    },
+    "y": {
+      "field": "row",
+      "type": "ordinal",
+      "axis": null
+    },
+    "color": {
+      "field": "BeekeeperType",
+      "type": "nominal",
+      "title": "Beekeeper type",
+      "scale": {
+        "domain": [
+          "Commercial",
+          "Recreational"
+        ],
+        "range": [
+          "#C47A16",
+          "#E7C98D"
+        ]
+      },
+      "legend": {
+        "orient": "bottom",
+        "direction": "horizontal",
+        "title": null,
+        "offset": 15
+      }
+    },
+    "tooltip": [
+      {
+        "field": "BeekeeperType",
+        "type": "nominal",
+        "title": "Beekeeper type"
+      }
+    ]
+  },
   "config": {
     "font": "Arial",
-    "axis": {
-      "labelFontSize": 11,
-      "titleFontSize": 12,
-      "gridColor": "#E8DFD1",
-      "labelColor": "#5C5147",
-      "titleColor": "#493D32",
-      "domainColor": "#BDAF9E",
-      "tickColor": "#BDAF9E"
+    "view": {
+      "stroke": null
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12,
-      "labelColor": "#5C5147",
-      "titleColor": "#493D32"
+      "labelColor": "#5C5147"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start",
       "color": "#3F3023",
       "subtitleColor": "#65584A"
-    },
-    "view": {
-      "stroke": null
-    },
-    "concat": {
-      "spacing": 30
-    },
-    "background": "#FFFDF8",
-    "range": {
-      "category": [
-        "#C47A16",
-        "#2F6F9F",
-        "#E2B84B",
-        "#6C5A49",
-        "#7E9DB5",
-        "#D9A66C"
-      ]
     }
   }
 }
