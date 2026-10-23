@@ -3,43 +3,425 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Beyond the Honey Jar</title>
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
+
 <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
 <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
 </head>
+
 <body>
+
 <header>
-<p class="eyebrow">AUSTRALIA'S HONEY INDUSTRY</p>
-<h1>Beyond the <span>Honey Jar</span></h1>
-<p class="lead">How people, place and trade shape Australia’s honey industry.</p>
-<div class="kpis"><div><b>29,690</b>Beekeepers</div><div><b>668,672</b>Hives</div><div><b>24,600</b>Public-land apiary sites</div></div>
+  <p class="eyebrow">AUSTRALIA'S HONEY INDUSTRY</p>
+
+  <h1>Beyond the <span>Honey Jar</span></h1>
+
+  <p class="lead">
+    How people, place and trade shape Australia’s honey industry.
+  </p>
+
+  <div class="kpis">
+    <div>
+      <b>29,690</b>
+      Beekeepers
+    </div>
+
+    <div>
+      <b>668,672</b>
+      Hives
+    </div>
+
+    <div>
+      <b>24,600</b>
+      Public-land apiary sites
+    </div>
+  </div>
 </header>
+
+
 <main>
-<section><div class="chapter"><small>01 · PEOPLE & PARTICIPATION</small><h2>The People Behind the Hive</h2></div>
-<div id="vis01" class="chart"></div>
-<div id="vis02" class="chart"></div></section>
 
-<section><div class="chapter"><small>02 · GEOGRAPHY & SCALE</small><h2>A Country of Hives</h2></div>
-<div id="vis03" class="chart"></div>
-<div id="vis04" class="chart"></div>
-<div id="vis05" class="chart"></div></section>
+<!-- ================================================= -->
+<!-- SECTION 01 -->
+<!-- ================================================= -->
 
-<section><div class="chapter"><small>03 · LANDSCAPE DEPENDENCE</small><h2>Honey and the Landscape</h2></div>
-<div id="vis06" class="chart"></div>
-<div id="vis07" class="chart"></div>
-<div id="vis08" class="chart"></div></section>
+<section>
 
-<section><div class="chapter"><small>04 · TRADE OVER TIME</small><h2>Australia in the Honey Trade</h2></div>
-<div id="vis09" class="chart"></div>
-<div id="vis10" class="chart"></div>
-<div id="vis11" class="chart"></div></section>
+  <div class="chapter">
 
-<section class="end"><small>RETURN TO THE HONEY JAR</small><h2>One industry, shaped by people, place, landscape and trade.</h2></section>
+    <small>01 · PEOPLE & PARTICIPATION</small>
+
+    <h2>The People Behind the Hive</h2>
+
+    <p class="section-story">
+      The story begins with the people who keep Australia’s bees.
+      Recreational beekeepers make up the overwhelming majority of
+      participants, but participation is not evenly distributed.
+      New South Wales and Victoria contain the largest registered
+      beekeeper communities. This establishes who is involved before
+      exploring where Australia's hives are concentrated.
+    </p>
+
+  </div>
+
+
+  <!-- GRAPH 01 -->
+
+  <div id="vis01" class="chart"></div>
+
+  <p class="chart-analysis">
+    The beekeeper composition was analysed to compare commercial and
+    recreational participation. Only about 6% of registered beekeepers
+    are commercial operators, while approximately 94% are recreational.
+    This shows that Australian beekeeping has a very broad recreational
+    participation base.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 02 -->
+
+  <div id="vis02" class="chart"></div>
+
+  <p class="chart-analysis">
+    Registered beekeeper numbers were compared across Australian states.
+    New South Wales records 9,347 beekeepers and Victoria records 9,236,
+    making them the two largest beekeeper communities shown. Tasmania,
+    by comparison, records only 276 beekeepers.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- SECTION 02 -->
+<!-- ================================================= -->
+
+<section>
+
+  <div class="chapter">
+
+    <small>02 · GEOGRAPHY & SCALE</small>
+
+    <h2>A Country of Hives</h2>
+
+    <p class="section-story">
+      The story now moves from people to place. Comparing hive density,
+      total hive numbers and state profiles shows that the geography of
+      Australian beekeeping changes depending on how scale is measured.
+      Tasmania stands out for hive density and operating intensity,
+      while New South Wales dominates several absolute measures.
+    </p>
+
+  </div>
+
+
+  <!-- GRAPH 03 -->
+
+  <div id="vis03" class="chart"></div>
+
+  <p class="chart-analysis">
+    Hive numbers were normalised by state land area to avoid larger
+    states appearing more important simply because of their size.
+    Tasmania records the highest hive density at approximately
+    347 hives per 1,000 km², followed by Victoria and New South Wales.
+    This provides a more meaningful geographic comparison than using
+    absolute hive totals alone.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 04 -->
+
+  <div id="vis04" class="chart"></div>
+
+  <p class="chart-analysis">
+    Total hive numbers and beekeeper intensity were analysed together.
+    New South Wales has the largest hive population with 297,362 hives,
+    but Tasmania records approximately 86.1 hives per beekeeper.
+    Therefore, the state with the largest number of hives is not
+    necessarily the state with the most intensive beekeeping activity.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 05 -->
+
+  <div id="vis05" class="chart"></div>
+
+  <p class="chart-analysis">
+    State beekeeping profiles were compared across beekeeper numbers,
+    hive numbers, apiary access and hives per beekeeper. New South Wales
+    performs strongly across several absolute measures, while Tasmania
+    stands out for hives per beekeeper. This shows that no single state
+    dominates every aspect of the industry.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- SECTION 03 -->
+<!-- ================================================= -->
+
+<section>
+
+  <div class="chapter">
+
+    <small>03 · LANDSCAPE DEPENDENCE</small>
+
+    <h2>Honey and the Landscape</h2>
+
+    <p class="section-story">
+      Having established where beekeeping activity occurs, the story
+      turns to the landscapes that support it. Public land forms an
+      important part of beekeeping operations in several states, while
+      the distribution of public apiary sites in New South Wales shows
+      how access to suitable locations extends across a broad area.
+    </p>
+
+  </div>
+
+
+  <!-- GRAPH 06 -->
+
+  <div id="vis06" class="chart"></div>
+
+  <p class="chart-analysis">
+    Public-land dependence was compared between the available 2014–15
+    and 2019 observations. Queensland shows the largest increase,
+    rising from approximately 28% to 80%, while Tasmania increases
+    from about 82% to 90%. The comparison indicates increasing
+    dependence on public land in several states.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 07 -->
+
+  <div id="vis07" class="chart"></div>
+
+  <p class="chart-analysis">
+    The state profiles were normalised to compare different measures
+    on a common scale. The states do not follow one consistent pattern:
+    states with large beekeeper or hive populations are not necessarily
+    the strongest in apiary access or hives per beekeeper. This
+    highlights the different operating structures across Australia.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 08 -->
+
+  <div id="vis08" class="chart"></div>
+
+  <p class="chart-analysis">
+    Public apiary locations were mapped to examine their geographic
+    distribution across New South Wales. The sites extend across a
+    broad area rather than forming one isolated cluster, showing that
+    public-land access for beekeeping is geographically dispersed
+    throughout the state.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/CAPMS/Apiary/MapServer/0"
+       target="_blank"
+       rel="noopener">
+      NSW Government Public Apiary Sites ↗
+    </a>
+  </p>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- SECTION 04 -->
+<!-- ================================================= -->
+
+<section>
+
+  <div class="chapter">
+
+    <small>04 · TRADE OVER TIME</small>
+
+    <h2>Australia in the Honey Trade</h2>
+
+    <p class="section-story">
+      The final part of the story follows Australian honey from
+      production into the market. Australia began the period with
+      strong export surpluses, but growing imports progressively
+      narrowed this advantage. Together, the following visualisations
+      reveal the transition toward a more competitive and
+      import-pressured trade environment.
+    </p>
+
+  </div>
+
+
+  <!-- GRAPH 09 -->
+
+  <div id="vis09" class="chart"></div>
+
+  <p class="chart-analysis">
+    Import and export values between 1996 and 2020 were analysed to
+    examine Australia's changing trade position. Exports were much
+    larger than imports during most earlier years, but imports rose
+    strongly during the 2010s and exceeded exports in several later
+    years.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 10 -->
+
+  <div id="vis10" class="chart"></div>
+
+  <p class="chart-analysis">
+    The trade balance was analysed as exports minus imports. Australia
+    recorded large positive balances throughout many earlier years,
+    but the balance became negative in 2014 and reached its largest
+    deficit in 2016 at approximately AUD 34.9 million. A small positive
+    balance returned in 2020.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+
+  <!-- GRAPH 11 -->
+
+  <div id="vis11" class="chart"></div>
+
+  <p class="chart-analysis">
+    Imports, exports and trade balance were compared across individual
+    years to identify the changing trade regime. Later years combine
+    much stronger import values with weaker or negative trade balances,
+    making Australia's shift from a strong export surplus toward
+    increasing import pressure clearly visible.
+  </p>
+
+  <p class="source">
+    Source:
+    <a href="https://www.agriculture.gov.au/abares"
+       target="_blank"
+       rel="noopener">
+      ABARES ↗
+    </a>
+  </p>
+
+</section>
+
+
+<!-- ================================================= -->
+<!-- CONCLUSION -->
+<!-- ================================================= -->
+
+<section class="end">
+
+  <small>RETURN TO THE HONEY JAR</small>
+
+  <h2>
+    One industry, shaped by people, place, landscape and trade.
+  </h2>
+
+  <p class="section-story">
+    Behind every honey jar is a much larger system. Australia’s honey
+    industry begins with a predominantly recreational beekeeping
+    community, but hive scale and intensity vary considerably between
+    states. Access to suitable landscapes and public apiary locations
+    supports these operations, while growing imports have changed
+    Australia's position in the international market. Together, the
+    visualisations show that Australian honey is shaped not by one
+    factor, but by the interaction between people, geography,
+    landscape access and trade.
+  </p>
+
+</section>
+
 </main>
+
 <script src="script.js"></script>
-</body></html>
+
+</body>
+</html>
