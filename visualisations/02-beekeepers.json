@@ -1,105 +1,163 @@
 {
   "title": {
-    "text": "Where are public apiary sites located in NSW?",
-    "subtitle": "Dot map — each dot is a NSW Government public apiary-site record.",
-    "anchor": "start"
+    "text": "02 · Victoria and New South Wales lead beekeeper numbers",
+    "anchor": "start",
+    "subtitle": "Beekeeper participation is concentrated most strongly in Australia’s two largest eastern states.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 900,
-  "height": 460,
-  "projection": {
-    "type": "mercator"
-  },
-  "layer": [
-    {
-      "data": {
-        "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
+  "width": "container",
+  "height": 290,
+  "data": {
+    "values": [
+      {
+        "State": "New South Wales",
+        "Commercial": 848,
+        "Recreational": 8499,
+        "Total": 9347,
+        "Hives": 297362,
+        "Apiary": 8500,
+        "HPB": 31.8
       },
-      "transform": [
-        {
-          "filter": "datum.properties.STATE_NAME === 'New South Wales'"
-        }
-      ],
-      "mark": {
-        "type": "geoshape",
-        "fill": "#F4F0E7",
-        "stroke": "#8D8477",
-        "strokeWidth": 1.2
+      {
+        "State": "Queensland",
+        "Commercial": 309,
+        "Recreational": 4760,
+        "Total": 5069,
+        "Hives": 105495,
+        "Apiary": 6500,
+        "HPB": 20.8
+      },
+      {
+        "State": "South Australia",
+        "Commercial": 175,
+        "Recreational": 2284,
+        "Total": 2459,
+        "Hives": 69810,
+        "Apiary": 400,
+        "HPB": 28.4
+      },
+      {
+        "State": "Tasmania",
+        "Commercial": 38,
+        "Recreational": 238,
+        "Total": 276,
+        "Hives": 23750,
+        "Apiary": 2000,
+        "HPB": 86.1
+      },
+      {
+        "State": "Victoria",
+        "Commercial": 337,
+        "Recreational": 8899,
+        "Total": 9236,
+        "Hives": 123277,
+        "Apiary": 4000,
+        "HPB": 13.4
+      },
+      {
+        "State": "Western Australia",
+        "Commercial": 161,
+        "Recreational": 3142,
+        "Total": 3303,
+        "Hives": 48978,
+        "Apiary": 3200,
+        "HPB": 14.8
       }
+    ]
+  },
+  "mark": {
+    "type": "bar",
+    "cornerRadiusEnd": 5
+  },
+  "encoding": {
+    "y": {
+      "field": "State",
+      "type": "nominal",
+      "sort": "-x",
+      "title": null
     },
-    {
-      "data": {
-        "url": "https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/CAPMS/Apiary/MapServer/0/query?where=1%3D1&outFields=SiteName%2CSiteNumber%2CStatus&returnGeometry=true&outSR=4326&f=geojson&resultRecordCount=2000",
-        "format": {
-          "type": "json",
-          "property": "features"
-        }
+    "x": {
+      "field": "Total",
+      "type": "quantitative",
+      "title": "Beekeepers"
+    },
+    "color": {
+      "value": "#D7922E"
+    },
+    "tooltip": [
+      {
+        "field": "State",
+        "type": "nominal"
       },
-      "transform": [
-        {
-          "calculate": "datum.geometry.coordinates[0]",
-          "as": "Longitude"
-        },
-        {
-          "calculate": "datum.geometry.coordinates[1]",
-          "as": "Latitude"
-        }
-      ],
-      "mark": {
-        "type": "circle",
-        "size": 18,
-        "opacity": 0.48,
-        "color": "#B96B22"
+      {
+        "field": "Total",
+        "type": "quantitative",
+        "format": ","
       },
-      "encoding": {
-        "longitude": {
-          "field": "Longitude",
-          "type": "quantitative"
-        },
-        "latitude": {
-          "field": "Latitude",
-          "type": "quantitative"
-        },
-        "tooltip": [
-          {
-            "field": "properties.SiteName",
-            "type": "nominal",
-            "title": "Apiary site"
-          },
-          {
-            "field": "properties.SiteNumber",
-            "type": "nominal",
-            "title": "Site number"
-          }
-        ]
+      {
+        "field": "Commercial",
+        "type": "quantitative",
+        "format": ","
+      },
+      {
+        "field": "Recreational",
+        "type": "quantitative",
+        "format": ","
       }
-    }
-  ],
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    ]
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

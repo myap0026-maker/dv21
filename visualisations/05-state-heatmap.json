@@ -1,10 +1,16 @@
 {
   "title": {
-    "text": "State beekeeping profile",
-    "subtitle": "Darker cells indicate higher values within each metric.",
-    "anchor": "start"
+    "text": "05 · How do state beekeeping profiles differ?",
+    "anchor": "start",
+    "subtitle": "Comparing relative levels reveals different combinations of beekeepers, hives, apiary access and operating intensity.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 900,
+  "width": "container",
   "height": 280,
   "data": {
     "values": [
@@ -199,28 +205,53 @@
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

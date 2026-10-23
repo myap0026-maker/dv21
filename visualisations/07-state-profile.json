@@ -1,11 +1,17 @@
 {
   "title": {
-    "text": "State beekeeping profile",
-    "subtitle": "Darker cells indicate higher values within each metric.",
-    "anchor": "start"
+    "text": "07 · No single state dominates every measure",
+    "anchor": "start",
+    "subtitle": "Each state combines participation, hive scale, apiary access and hives per beekeeper differently.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 900,
-  "height": 280,
+  "width": "container",
+  "height": 340,
   "data": {
     "values": [
       {
@@ -155,13 +161,14 @@
     ]
   },
   "mark": {
-    "type": "rect",
-    "cornerRadius": 3
+    "type": "line",
+    "point": true,
+    "strokeWidth": 2.5
   },
   "encoding": {
     "x": {
       "field": "Metric",
-      "type": "nominal",
+      "type": "ordinal",
       "sort": [
         "Total",
         "Hives",
@@ -171,17 +178,22 @@
       "title": null
     },
     "y": {
-      "field": "State",
-      "type": "nominal",
-      "title": null
-    },
-    "color": {
       "field": "Normalized",
       "type": "quantitative",
+      "title": "Normalised value",
       "scale": {
-        "scheme": "yelloworangebrown"
-      },
-      "title": "Relative level"
+        "domain": [
+          0,
+          1
+        ]
+      }
+    },
+    "color": {
+      "field": "State",
+      "type": "nominal"
+    },
+    "detail": {
+      "field": "State"
     },
     "tooltip": [
       {
@@ -199,28 +211,53 @@
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

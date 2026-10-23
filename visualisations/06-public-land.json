@@ -1,227 +1,169 @@
 {
   "title": {
-    "text": "Trade balance moved into deficit",
-    "subtitle": "Calculated balance equals exports minus imports, avoiding the reported 2019 inconsistency.",
-    "anchor": "start"
+    "text": "06 · Public-land dependence increased",
+    "anchor": "start",
+    "subtitle": "Several states became more reliant on public land between 2014–15 and 2019.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 500,
-  "height": 300,
+  "width": "container",
+  "height": 340,
   "data": {
     "values": [
       {
-        "Year": 1996,
-        "Imports": 713140,
-        "Exports": 22166950,
-        "Balance": 21453810
+        "State": "New South Wales",
+        "Year": "2014-15",
+        "Share": 0.41
       },
       {
-        "Year": 1997,
-        "Imports": 493511,
-        "Exports": 30859246,
-        "Balance": 30365735
-      },
-      {
-        "Year": 1998,
-        "Imports": 479573,
-        "Exports": 28743697,
-        "Balance": 28264124
-      },
-      {
-        "Year": 1999,
-        "Imports": 560111,
-        "Exports": 27431861,
-        "Balance": 26871750
-      },
-      {
-        "Year": 2000,
-        "Imports": 1257667,
-        "Exports": 27627210,
-        "Balance": 26369543
-      },
-      {
-        "Year": 2001,
-        "Imports": 2406046,
-        "Exports": 25666497,
-        "Balance": 23260451
-      },
-      {
-        "Year": 2002,
-        "Imports": 8655657,
-        "Exports": 33288867,
-        "Balance": 24633210
-      },
-      {
-        "Year": 2003,
-        "Imports": 29561741,
-        "Exports": 28713348,
-        "Balance": -848393
-      },
-      {
-        "Year": 2004,
-        "Imports": 23924310,
-        "Exports": 29452929,
-        "Balance": 5528619
-      },
-      {
-        "Year": 2005,
-        "Imports": 9563405,
-        "Exports": 33428877,
-        "Balance": 23865472
-      },
-      {
-        "Year": 2006,
-        "Imports": 6542384,
-        "Exports": 30722732,
-        "Balance": 24180348
-      },
-      {
-        "Year": 2007,
-        "Imports": 8400553,
-        "Exports": 28150636,
-        "Balance": 19750083
-      },
-      {
-        "Year": 2008,
-        "Imports": 17342083,
-        "Exports": 26902463,
-        "Balance": 9560380
-      },
-      {
-        "Year": 2009,
-        "Imports": 20265157,
-        "Exports": 41990280,
-        "Balance": 21725123
-      },
-      {
-        "Year": 2010,
-        "Imports": 23764400,
-        "Exports": 37061763,
-        "Balance": 13297363
-      },
-      {
-        "Year": 2011,
-        "Imports": 17334950,
-        "Exports": 26226662,
-        "Balance": 8891712
-      },
-      {
-        "Year": 2012,
-        "Imports": 18313067,
-        "Exports": 25877454,
-        "Balance": 7564387
-      },
-      {
-        "Year": 2013,
-        "Imports": 19451837,
-        "Exports": 27203762,
-        "Balance": 7751925
-      },
-      {
-        "Year": 2014,
-        "Imports": 34570642,
-        "Exports": 32231632,
-        "Balance": -2339010
-      },
-      {
-        "Year": 2015,
-        "Imports": 56791360,
-        "Exports": 39728258,
-        "Balance": -17063102
-      },
-      {
-        "Year": 2016,
-        "Imports": 83943306,
-        "Exports": 49044496,
-        "Balance": -34898810
-      },
-      {
-        "Year": 2017,
-        "Imports": 55710984,
-        "Exports": 42469110,
-        "Balance": -13241874
-      },
-      {
-        "Year": 2018,
-        "Imports": 72311741,
-        "Exports": 46968421,
-        "Balance": -25343320
-      },
-      {
+        "State": "New South Wales",
         "Year": 2019,
-        "Imports": 64771277,
-        "Exports": 53263091,
-        "Balance": -11508186
+        "Share": 0.45
       },
       {
-        "Year": 2020,
-        "Imports": 58387302,
-        "Exports": 59547594,
-        "Balance": 1160292
+        "State": "Queensland",
+        "Year": "2014-15",
+        "Share": 0.28
+      },
+      {
+        "State": "Queensland",
+        "Year": 2019,
+        "Share": 0.8
+      },
+      {
+        "State": "South Australia",
+        "Year": "2014-15",
+        "Share": 0.07
+      },
+      {
+        "State": "Tasmania",
+        "Year": "2014-15",
+        "Share": 0.82
+      },
+      {
+        "State": "Tasmania",
+        "Year": 2019,
+        "Share": 0.9
+      },
+      {
+        "State": "Victoria",
+        "Year": "2014-15",
+        "Share": 0.58
+      },
+      {
+        "State": "Victoria",
+        "Year": 2019,
+        "Share": 0.7
+      },
+      {
+        "State": "Western Australia",
+        "Year": "2014-15",
+        "Share": 0.63
+      },
+      {
+        "State": "Western Australia",
+        "Year": 2019,
+        "Share": 0.8
       }
     ]
   },
   "mark": {
-    "type": "bar",
-    "cornerRadiusEnd": 3
+    "type": "line",
+    "point": {
+      "filled": true,
+      "size": 90
+    },
+    "strokeWidth": 3
   },
   "encoding": {
     "x": {
       "field": "Year",
       "type": "ordinal",
-      "title": "Year",
-      "axis": {
-        "labelAngle": -45
-      }
+      "title": null
     },
     "y": {
-      "field": "Balance",
+      "field": "Share",
       "type": "quantitative",
-      "title": "Trade balance (AUD)",
+      "title": "Public-land share",
       "axis": {
-        "format": "$~s"
+        "format": ".0%"
       }
     },
     "color": {
-      "condition": {
-        "test": "datum.Balance >= 0",
-        "value": "#D9A12E"
-      },
-      "value": "#8A6A58"
+      "field": "State",
+      "type": "nominal",
+      "title": "State"
+    },
+    "detail": {
+      "field": "State"
     },
     "tooltip": [
+      {
+        "field": "State",
+        "type": "nominal"
+      },
       {
         "field": "Year",
         "type": "ordinal"
       },
       {
-        "field": "Balance",
+        "field": "Share",
         "type": "quantitative",
-        "format": "$,.0f"
+        "format": ".0%"
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

@@ -1,132 +1,189 @@
 {
   "title": {
-    "text": "Victoria and New South Wales lead beekeeper numbers",
-    "subtitle": "Registered beekeeper communities vary sharply between states.",
-    "anchor": "start"
+    "text": "04 · Hive scale and beekeeper intensity",
+    "anchor": "start",
+    "subtitle": "Large hive populations do not always mean the highest number of hives per beekeeper.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 500,
-  "height": 290,
-  "data": {
-    "values": [
-      {
-        "State": "New South Wales",
-        "Commercial": 848,
-        "Recreational": 8499,
-        "Total": 9347,
-        "Hives": 297362,
-        "Apiary": 8500,
-        "HPB": 31.8
+  "width": "container",
+  "height": 370,
+  "projection": {
+    "type": "mercator"
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
       },
-      {
-        "State": "Queensland",
-        "Commercial": 309,
-        "Recreational": 4760,
-        "Total": 5069,
-        "Hives": 105495,
-        "Apiary": 6500,
-        "HPB": 20.8
-      },
-      {
-        "State": "South Australia",
-        "Commercial": 175,
-        "Recreational": 2284,
-        "Total": 2459,
-        "Hives": 69810,
-        "Apiary": 400,
-        "HPB": 28.4
-      },
-      {
-        "State": "Tasmania",
-        "Commercial": 38,
-        "Recreational": 238,
-        "Total": 276,
-        "Hives": 23750,
-        "Apiary": 2000,
-        "HPB": 86.1
-      },
-      {
-        "State": "Victoria",
-        "Commercial": 337,
-        "Recreational": 8899,
-        "Total": 9236,
-        "Hives": 123277,
-        "Apiary": 4000,
-        "HPB": 13.4
-      },
-      {
-        "State": "Western Australia",
-        "Commercial": 161,
-        "Recreational": 3142,
-        "Total": 3303,
-        "Hives": 48978,
-        "Apiary": 3200,
-        "HPB": 14.8
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F2EEE5",
+        "stroke": "#AFA698",
+        "strokeWidth": 1.1
       }
-    ]
-  },
-  "mark": {
-    "type": "bar",
-    "cornerRadiusEnd": 5
-  },
-  "encoding": {
-    "y": {
-      "field": "State",
-      "type": "nominal",
-      "sort": "-x",
-      "title": null
     },
-    "x": {
-      "field": "Total",
-      "type": "quantitative",
-      "title": "Beekeepers"
-    },
-    "color": {
-      "value": "#D7922E"
-    },
-    "tooltip": [
-      {
-        "field": "State",
-        "type": "nominal"
+    {
+      "data": {
+        "values": [
+          {
+            "State": "NSW",
+            "Longitude": 147,
+            "Latitude": -32.5,
+            "Hives": 297362,
+            "HPB": 31.8
+          },
+          {
+            "State": "QLD",
+            "Longitude": 145,
+            "Latitude": -22.5,
+            "Hives": 105495,
+            "HPB": 20.8
+          },
+          {
+            "State": "SA",
+            "Longitude": 135.5,
+            "Latitude": -30,
+            "Hives": 69810,
+            "HPB": 28.4
+          },
+          {
+            "State": "TAS",
+            "Longitude": 146.7,
+            "Latitude": -42,
+            "Hives": 23750,
+            "HPB": 86.1
+          },
+          {
+            "State": "VIC",
+            "Longitude": 144.5,
+            "Latitude": -37,
+            "Hives": 123277,
+            "HPB": 13.4
+          },
+          {
+            "State": "WA",
+            "Longitude": 121.5,
+            "Latitude": -25.5,
+            "Hives": 48978,
+            "HPB": 14.8
+          }
+        ]
       },
-      {
-        "field": "Total",
-        "type": "quantitative",
-        "format": ","
+      "mark": {
+        "type": "circle",
+        "opacity": 0.82,
+        "stroke": "white",
+        "strokeWidth": 1.5
       },
-      {
-        "field": "Commercial",
-        "type": "quantitative",
-        "format": ","
-      },
-      {
-        "field": "Recreational",
-        "type": "quantitative",
-        "format": ","
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "size": {
+          "field": "Hives",
+          "type": "quantitative",
+          "scale": {
+            "range": [
+              300,
+              4300
+            ]
+          },
+          "legend": {
+            "title": "Hives",
+            "format": "~s"
+          }
+        },
+        "color": {
+          "field": "HPB",
+          "type": "quantitative",
+          "scale": {
+            "scheme": "yelloworangebrown"
+          },
+          "legend": {
+            "title": "Hives / beekeeper"
+          }
+        },
+        "tooltip": [
+          {
+            "field": "State",
+            "type": "nominal"
+          },
+          {
+            "field": "Hives",
+            "type": "quantitative",
+            "format": ","
+          },
+          {
+            "field": "HPB",
+            "type": "quantitative",
+            "title": "Hives / beekeeper",
+            "format": ".1f"
+          }
+        ]
       }
-    ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

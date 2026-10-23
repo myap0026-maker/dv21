@@ -1,232 +1,258 @@
 {
   "title": {
-    "text": "States follow different beekeeping profiles",
-    "subtitle": "Each line compares a state across four independently normalised measures.",
-    "anchor": "start"
+    "text": "10 · Trade balance moved into deficit",
+    "anchor": "start",
+    "subtitle": "The late 2010s marked a clear break from the large trade surpluses seen in earlier years.",
+    "fontSize": 21,
+    "subtitleFontSize": 12,
+    "subtitleColor": "#6D6257",
+    "offset": 12,
+    "fontWeight": "bold",
+    "subtitleFontWeight": "normal"
   },
-  "width": 500,
-  "height": 340,
+  "width": "container",
+  "height": 300,
   "data": {
     "values": [
       {
-        "State": "New South Wales",
-        "Metric": "Total",
-        "Value": 9347,
-        "Normalized": 1
+        "Year": 1996,
+        "Imports": 713140,
+        "Exports": 22166950,
+        "Balance": 21453810
       },
       {
-        "State": "Queensland",
-        "Metric": "Total",
-        "Value": 5069,
-        "Normalized": 0.5283871678976959
+        "Year": 1997,
+        "Imports": 493511,
+        "Exports": 30859246,
+        "Balance": 30365735
       },
       {
-        "State": "South Australia",
-        "Metric": "Total",
-        "Value": 2459,
-        "Normalized": 0.24065703891522433
+        "Year": 1998,
+        "Imports": 479573,
+        "Exports": 28743697,
+        "Balance": 28264124
       },
       {
-        "State": "Tasmania",
-        "Metric": "Total",
-        "Value": 276,
-        "Normalized": 0
+        "Year": 1999,
+        "Imports": 560111,
+        "Exports": 27431861,
+        "Balance": 26871750
       },
       {
-        "State": "Victoria",
-        "Metric": "Total",
-        "Value": 9236,
-        "Normalized": 0.9877632014110903
+        "Year": 2000,
+        "Imports": 1257667,
+        "Exports": 27627210,
+        "Balance": 26369543
       },
       {
-        "State": "Western Australia",
-        "Metric": "Total",
-        "Value": 3303,
-        "Normalized": 0.33370080476242975
+        "Year": 2001,
+        "Imports": 2406046,
+        "Exports": 25666497,
+        "Balance": 23260451
       },
       {
-        "State": "New South Wales",
-        "Metric": "Hives",
-        "Value": 297362,
-        "Normalized": 1
+        "Year": 2002,
+        "Imports": 8655657,
+        "Exports": 33288867,
+        "Balance": 24633210
       },
       {
-        "State": "Queensland",
-        "Metric": "Hives",
-        "Value": 105495,
-        "Normalized": 0.29876248117772614
+        "Year": 2003,
+        "Imports": 29561741,
+        "Exports": 28713348,
+        "Balance": -848393
       },
       {
-        "State": "South Australia",
-        "Metric": "Hives",
-        "Value": 69810,
-        "Normalized": 0.16834056985804716
+        "Year": 2004,
+        "Imports": 23924310,
+        "Exports": 29452929,
+        "Balance": 5528619
       },
       {
-        "State": "Tasmania",
-        "Metric": "Hives",
-        "Value": 23750,
-        "Normalized": 0
+        "Year": 2005,
+        "Imports": 9563405,
+        "Exports": 33428877,
+        "Balance": 23865472
       },
       {
-        "State": "Victoria",
-        "Metric": "Hives",
-        "Value": 123277,
-        "Normalized": 0.3637523208046431
+        "Year": 2006,
+        "Imports": 6542384,
+        "Exports": 30722732,
+        "Balance": 24180348
       },
       {
-        "State": "Western Australia",
-        "Metric": "Hives",
-        "Value": 48978,
-        "Normalized": 0.09220355832346534
+        "Year": 2007,
+        "Imports": 8400553,
+        "Exports": 28150636,
+        "Balance": 19750083
       },
       {
-        "State": "New South Wales",
-        "Metric": "Apiary",
-        "Value": 8500,
-        "Normalized": 1
+        "Year": 2008,
+        "Imports": 17342083,
+        "Exports": 26902463,
+        "Balance": 9560380
       },
       {
-        "State": "Queensland",
-        "Metric": "Apiary",
-        "Value": 6500,
-        "Normalized": 0.7530864197530864
+        "Year": 2009,
+        "Imports": 20265157,
+        "Exports": 41990280,
+        "Balance": 21725123
       },
       {
-        "State": "South Australia",
-        "Metric": "Apiary",
-        "Value": 400,
-        "Normalized": 0
+        "Year": 2010,
+        "Imports": 23764400,
+        "Exports": 37061763,
+        "Balance": 13297363
       },
       {
-        "State": "Tasmania",
-        "Metric": "Apiary",
-        "Value": 2000,
-        "Normalized": 0.19753086419753085
+        "Year": 2011,
+        "Imports": 17334950,
+        "Exports": 26226662,
+        "Balance": 8891712
       },
       {
-        "State": "Victoria",
-        "Metric": "Apiary",
-        "Value": 4000,
-        "Normalized": 0.4444444444444444
+        "Year": 2012,
+        "Imports": 18313067,
+        "Exports": 25877454,
+        "Balance": 7564387
       },
       {
-        "State": "Western Australia",
-        "Metric": "Apiary",
-        "Value": 3200,
-        "Normalized": 0.345679012345679
+        "Year": 2013,
+        "Imports": 19451837,
+        "Exports": 27203762,
+        "Balance": 7751925
       },
       {
-        "State": "New South Wales",
-        "Metric": "HPB",
-        "Value": 31.8,
-        "Normalized": 0.2530949105914718
+        "Year": 2014,
+        "Imports": 34570642,
+        "Exports": 32231632,
+        "Balance": -2339010
       },
       {
-        "State": "Queensland",
-        "Metric": "HPB",
-        "Value": 20.8,
-        "Normalized": 0.1017881705639615
+        "Year": 2015,
+        "Imports": 56791360,
+        "Exports": 39728258,
+        "Balance": -17063102
       },
       {
-        "State": "South Australia",
-        "Metric": "HPB",
-        "Value": 28.4,
-        "Normalized": 0.2063273727647868
+        "Year": 2016,
+        "Imports": 83943306,
+        "Exports": 49044496,
+        "Balance": -34898810
       },
       {
-        "State": "Tasmania",
-        "Metric": "HPB",
-        "Value": 86.1,
-        "Normalized": 1
+        "Year": 2017,
+        "Imports": 55710984,
+        "Exports": 42469110,
+        "Balance": -13241874
       },
       {
-        "State": "Victoria",
-        "Metric": "HPB",
-        "Value": 13.4,
-        "Normalized": 0
+        "Year": 2018,
+        "Imports": 72311741,
+        "Exports": 46968421,
+        "Balance": -25343320
       },
       {
-        "State": "Western Australia",
-        "Metric": "HPB",
-        "Value": 14.8,
-        "Normalized": 0.019257221458046776
+        "Year": 2019,
+        "Imports": 64771277,
+        "Exports": 53263091,
+        "Balance": -11508186
+      },
+      {
+        "Year": 2020,
+        "Imports": 58387302,
+        "Exports": 59547594,
+        "Balance": 1160292
       }
     ]
   },
   "mark": {
-    "type": "line",
-    "point": true,
-    "strokeWidth": 2.5
+    "type": "bar",
+    "cornerRadiusEnd": 3
   },
   "encoding": {
     "x": {
-      "field": "Metric",
+      "field": "Year",
       "type": "ordinal",
-      "sort": [
-        "Total",
-        "Hives",
-        "Apiary",
-        "HPB"
-      ],
-      "title": null
+      "title": "Year",
+      "axis": {
+        "labelAngle": -45
+      }
     },
     "y": {
-      "field": "Normalized",
+      "field": "Balance",
       "type": "quantitative",
-      "title": "Normalised value",
-      "scale": {
-        "domain": [
-          0,
-          1
-        ]
+      "title": "Trade balance (AUD)",
+      "axis": {
+        "format": "$~s"
       }
     },
     "color": {
-      "field": "State",
-      "type": "nominal"
-    },
-    "detail": {
-      "field": "State"
+      "condition": {
+        "test": "datum.Balance >= 0",
+        "value": "#D9A12E"
+      },
+      "value": "#8A6A58"
     },
     "tooltip": [
       {
-        "field": "State",
-        "type": "nominal"
+        "field": "Year",
+        "type": "ordinal"
       },
       {
-        "field": "Metric",
-        "type": "nominal"
-      },
-      {
-        "field": "Value",
+        "field": "Balance",
         "type": "quantitative",
-        "format": ","
+        "format": "$,.0f"
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

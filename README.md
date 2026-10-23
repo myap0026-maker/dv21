@@ -1,5 +1,5 @@
 # Beyond the Honey Jar
-Built from the exact latest JSON supplied in ChatGPT.
+Built from the exact latest JSON supplied 
 
 Replace the files in your `dv21` repository, then run:
 ```

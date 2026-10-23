@@ -1,80 +1,80 @@
 {
   "title": {
-    "text": "Where are Australia's hives concentrated?",
-    "subtitle": "Choropleth map — darker states contain more recorded hives.",
-    "anchor": "start"
+    "text": "01 · THE PEOPLE BEHIND THE HIVE",
+    "subtitle": "Who keeps Australia’s bees, and where are beekeepers concentrated?",
+    "anchor": "start",
+    "fontSize": 26,
+    "subtitleFontSize": 14,
+    "offset": 12,
+    "subtitleColor": "#6D6257"
   },
-  "width": 500,
-  "height": 370,
-  "projection": {
-    "type": "mercator"
-  },
+  "width": "container",
+  "height": 1,
   "data": {
-    "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
-    "format": {
-      "type": "json",
-      "property": "features"
-    }
-  },
-  "transform": [
-    {
-      "calculate": "datum.properties.STATE_NAME === 'New South Wales' ? 297362 : datum.properties.STATE_NAME === 'Queensland' ? 105495 : datum.properties.STATE_NAME === 'South Australia' ? 69810 : datum.properties.STATE_NAME === 'Tasmania' ? 23750 : datum.properties.STATE_NAME === 'Victoria' ? 123277 : datum.properties.STATE_NAME === 'Western Australia' ? 48978 : null",
-      "as": "Hives"
-    }
-  ],
-  "mark": {
-    "type": "geoshape",
-    "stroke": "white",
-    "strokeWidth": 1.2
-  },
-  "encoding": {
-    "color": {
-      "field": "Hives",
-      "type": "quantitative",
-      "scale": {
-        "scheme": "yelloworangebrown"
-      },
-      "legend": {
-        "title": "Recorded hives",
-        "format": "~s"
-      }
-    },
-    "tooltip": [
+    "values": [
       {
-        "field": "properties.STATE_NAME",
-        "type": "nominal",
-        "title": "State"
-      },
-      {
-        "field": "Hives",
-        "type": "quantitative",
-        "title": "Hives",
-        "format": ","
+        "x": 0
       }
     ]
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "mark": {
+    "type": "point",
+    "opacity": 0
+  },
+  "encoding": {
+    "x": {
+      "field": "x",
+      "type": "quantitative",
+      "axis": null
+    }
+  },
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }

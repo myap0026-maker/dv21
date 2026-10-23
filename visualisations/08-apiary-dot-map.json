@@ -1,138 +1,171 @@
 {
   "title": {
-    "text": "Public-land dependence increased",
-    "subtitle": "Queensland shows the largest measured rise between 2014–15 and 2019.",
-    "anchor": "start"
+    "text": "08 · Where are public apiary sites located in NSW?",
+    "subtitle": "Each amber dot represents one mapped public apiary site in the NSW source.",
+    "anchor": "start",
+    "fontSize": 21,
+    "fontWeight": "bold",
+    "subtitleFontSize": 12,
+    "subtitleFontWeight": "normal",
+    "subtitleColor": "#6D6257",
+    "offset": 14
   },
-  "width": 500,
-  "height": 340,
-  "data": {
-    "values": [
-      {
-        "State": "New South Wales",
-        "Year": "2014-15",
-        "Share": 0.41
-      },
-      {
-        "State": "New South Wales",
-        "Year": 2019,
-        "Share": 0.45
-      },
-      {
-        "State": "Queensland",
-        "Year": "2014-15",
-        "Share": 0.28
-      },
-      {
-        "State": "Queensland",
-        "Year": 2019,
-        "Share": 0.8
-      },
-      {
-        "State": "South Australia",
-        "Year": "2014-15",
-        "Share": 0.07
-      },
-      {
-        "State": "Tasmania",
-        "Year": "2014-15",
-        "Share": 0.82
-      },
-      {
-        "State": "Tasmania",
-        "Year": 2019,
-        "Share": 0.9
-      },
-      {
-        "State": "Victoria",
-        "Year": "2014-15",
-        "Share": 0.58
-      },
-      {
-        "State": "Victoria",
-        "Year": 2019,
-        "Share": 0.7
-      },
-      {
-        "State": "Western Australia",
-        "Year": "2014-15",
-        "Share": 0.63
-      },
-      {
-        "State": "Western Australia",
-        "Year": 2019,
-        "Share": 0.8
-      }
-    ]
+  "width": "container",
+  "height": 460,
+  "projection": {
+    "type": "mercator"
   },
-  "mark": {
-    "type": "line",
-    "point": {
-      "filled": true,
-      "size": 90
-    },
-    "strokeWidth": 3
-  },
-  "encoding": {
-    "x": {
-      "field": "Year",
-      "type": "ordinal",
-      "title": null
-    },
-    "y": {
-      "field": "Share",
-      "type": "quantitative",
-      "title": "Public-land share",
-      "axis": {
-        "format": ".0%"
+  "layer": [
+    {
+      "data": {
+        "url": "https://raw.githubusercontent.com/tonywr71/GeoJson-Data/master/australian-states.json",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
+      },
+      "transform": [
+        {
+          "filter": "datum.properties.STATE_NAME === 'New South Wales'"
+        }
+      ],
+      "mark": {
+        "type": "geoshape",
+        "fill": "#F4F0E7",
+        "stroke": "#8D8477",
+        "strokeWidth": 1.2
       }
     },
-    "color": {
-      "field": "State",
-      "type": "nominal",
-      "title": "State"
-    },
-    "detail": {
-      "field": "State"
-    },
-    "tooltip": [
-      {
-        "field": "State",
-        "type": "nominal"
+    {
+      "data": {
+        "url": "https://mapprod2.environment.nsw.gov.au/arcgis/rest/services/CAPMS/Apiary/MapServer/0/query?where=1%3D1&outFields=SiteName%2CSiteNumber%2CStatus&returnGeometry=true&outSR=4326&f=geojson&resultRecordCount=2000",
+        "format": {
+          "type": "json",
+          "property": "features"
+        }
       },
-      {
-        "field": "Year",
-        "type": "ordinal"
+      "transform": [
+        {
+          "calculate": "datum.geometry.coordinates[0]",
+          "as": "Longitude"
+        },
+        {
+          "calculate": "datum.geometry.coordinates[1]",
+          "as": "Latitude"
+        },
+        {
+          "filter": "datum.Longitude >= 140.9 && datum.Longitude <= 154.0 && datum.Latitude >= -37.6 && datum.Latitude <= -28.0"
+        }
+      ],
+      "mark": {
+        "type": "circle",
+        "size": 18,
+        "opacity": 0.48
       },
-      {
-        "field": "Share",
-        "type": "quantitative",
-        "format": ".0%"
+      "encoding": {
+        "longitude": {
+          "field": "Longitude",
+          "type": "quantitative"
+        },
+        "latitude": {
+          "field": "Latitude",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "properties.SiteName",
+            "type": "nominal",
+            "title": "Apiary site"
+          },
+          {
+            "field": "properties.SiteNumber",
+            "type": "nominal",
+            "title": "Site number"
+          },
+          {
+            "field": "properties.Status",
+            "type": "nominal",
+            "title": "Status"
+          },
+          {
+            "field": "Latitude",
+            "type": "quantitative",
+            "title": "Latitude",
+            "format": ".3f"
+          },
+          {
+            "field": "Longitude",
+            "type": "quantitative",
+            "title": "Longitude",
+            "format": ".3f"
+          }
+        ],
+        "color": {
+          "datum": "Public apiary site",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Public apiary site"
+            ],
+            "range": [
+              "#C47A16"
+            ]
+          },
+          "legend": {
+            "title": "Map key",
+            "orient": "bottom"
+          }
+        }
       }
-    ]
+    }
+  ],
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
   },
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
     "font": "Arial",
     "axis": {
       "labelFontSize": 11,
       "titleFontSize": 12,
-      "gridColor": "#EEE8DC"
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
     "legend": {
       "labelFontSize": 11,
-      "titleFontSize": 12
+      "titleFontSize": 12,
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32"
     },
     "title": {
       "font": "Arial",
       "subtitleFont": "Arial",
-      "anchor": "start"
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
     },
     "view": {
       "stroke": null
     },
     "concat": {
       "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
   }
 }
