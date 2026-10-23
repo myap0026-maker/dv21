@@ -11,12 +11,7 @@
     "subtitleFontWeight": "normal"
   },
   "width": "container",
-  "height": 370,
-  "autosize": {
-  "type": "fit",
-  "contains": "padding",
-  "resize": true
-},
+  "height": 430,
   "projection": {
     "type": "mercator"
   },
@@ -190,5 +185,11 @@
         "#D9A66C"
       ]
     }
+  },
+  "padding": {
+    "left": 40,
+    "right": 85,
+    "top": 30,
+    "bottom": 45
   }
 }

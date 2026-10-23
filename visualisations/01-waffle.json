@@ -1,116 +1,86 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#FFF9EE",
-
   "title": {
-    "text": "01 · Commercial beekeepers are a small minority",
-    "subtitle": "Each square represents approximately 1% of registered Australian beekeepers.",
+    "text": "01 · THE PEOPLE BEHIND THE HIVE",
+    "subtitle": "Who keeps Australia’s bees, and where are beekeepers concentrated?",
     "anchor": "start",
-    "fontSize": 21,
-    "fontWeight": "bold",
-    "subtitleFontSize": 12,
-    "subtitleFontWeight": "normal",
-    "subtitleColor": "#6D6257",
-    "color": "#3F3023",
-    "offset": 15
+    "fontSize": 26,
+    "subtitleFontSize": 14,
+    "offset": 12,
+    "subtitleColor": "#6D6257"
   },
-
   "width": "container",
-  "height": 300,
-  "autosize": {
-  "type": "fit",
-  "contains": "padding",
-  "resize": true
-},
-
+  "height": 1,
   "data": {
     "values": [
-      {"id":0},{"id":1},{"id":2},{"id":3},{"id":4},{"id":5},{"id":6},{"id":7},{"id":8},{"id":9},
-      {"id":10},{"id":11},{"id":12},{"id":13},{"id":14},{"id":15},{"id":16},{"id":17},{"id":18},{"id":19},
-      {"id":20},{"id":21},{"id":22},{"id":23},{"id":24},{"id":25},{"id":26},{"id":27},{"id":28},{"id":29},
-      {"id":30},{"id":31},{"id":32},{"id":33},{"id":34},{"id":35},{"id":36},{"id":37},{"id":38},{"id":39},
-      {"id":40},{"id":41},{"id":42},{"id":43},{"id":44},{"id":45},{"id":46},{"id":47},{"id":48},{"id":49},
-      {"id":50},{"id":51},{"id":52},{"id":53},{"id":54},{"id":55},{"id":56},{"id":57},{"id":58},{"id":59},
-      {"id":60},{"id":61},{"id":62},{"id":63},{"id":64},{"id":65},{"id":66},{"id":67},{"id":68},{"id":69},
-      {"id":70},{"id":71},{"id":72},{"id":73},{"id":74},{"id":75},{"id":76},{"id":77},{"id":78},{"id":79},
-      {"id":80},{"id":81},{"id":82},{"id":83},{"id":84},{"id":85},{"id":86},{"id":87},{"id":88},{"id":89},
-      {"id":90},{"id":91},{"id":92},{"id":93},{"id":94},{"id":95},{"id":96},{"id":97},{"id":98},{"id":99}
+      {
+        "x": 0
+      }
     ]
   },
-
-  "transform": [
-    {
-      "calculate": "datum.id % 10",
-      "as": "column"
-    },
-    {
-      "calculate": "floor(datum.id / 10)",
-      "as": "row"
-    },
-    {
-      "calculate": "datum.id < 6 ? 'Commercial' : 'Recreational'",
-      "as": "type"
-    }
-  ],
-
   "mark": {
-    "type": "square",
-    "size": 520
+    "type": "point",
+    "opacity": 0
   },
-
   "encoding": {
     "x": {
-      "field": "column",
-      "type": "ordinal",
+      "field": "x",
+      "type": "quantitative",
       "axis": null
-    },
-
-    "y": {
-      "field": "row",
-      "type": "ordinal",
-      "axis": null
-    },
-
-    "color": {
-      "field": "type",
-      "type": "nominal",
-      "scale": {
-        "domain": [
-          "Commercial",
-          "Recreational"
-        ],
-        "range": [
-          "#C47A16",
-          "#E7C98D"
-        ]
-      },
-      "legend": {
-        "title": "Beekeeper type",
-        "orient": "bottom"
-      }
-    },
-
-    "tooltip": [
-      {
-        "field": "type",
-        "type": "nominal",
-        "title": "Beekeeper type"
-      }
-    ]
+    }
   },
-
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.json",
+  "background": "#FFFDF8",
+  "autosize": {
+    "type": "fit",
+    "contains": "padding",
+    "resize": true
+  },
   "config": {
-    "view": {
-      "stroke": null
+    "font": "Arial",
+    "axis": {
+      "labelFontSize": 11,
+      "titleFontSize": 12,
+      "gridColor": "#E8DFD1",
+      "labelColor": "#5C5147",
+      "titleColor": "#493D32",
+      "domainColor": "#BDAF9E",
+      "tickColor": "#BDAF9E"
     },
-
-    "font": "DM Sans",
-
     "legend": {
-      "labelFontSize": 12,
+      "labelFontSize": 11,
       "titleFontSize": 12,
       "labelColor": "#5C5147",
       "titleColor": "#493D32"
+    },
+    "title": {
+      "font": "Arial",
+      "subtitleFont": "Arial",
+      "anchor": "start",
+      "color": "#3F3023",
+      "subtitleColor": "#65584A"
+    },
+    "view": {
+      "stroke": null
+    },
+    "concat": {
+      "spacing": 30
+    },
+    "background": "#FFFDF8",
+    "range": {
+      "category": [
+        "#C47A16",
+        "#2F6F9F",
+        "#E2B84B",
+        "#6C5A49",
+        "#7E9DB5",
+        "#D9A66C"
+      ]
     }
+  },
+  "padding": {
+    "left": 38,
+    "right": 70,
+    "top": 30,
+    "bottom": 45
   }
 }

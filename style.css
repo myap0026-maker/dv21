@@ -98,8 +98,8 @@ section {
 
 .chart {
   width: 100%;
-  padding: 30px 36px 28px;
   margin: 0;
+  padding: 42px 64px 40px;
   background: #fff9ee;
   border: 1px solid #e2d4ba;
   border-radius: 8px;
@@ -110,6 +110,7 @@ section {
   width: 100%;
   max-width: 100%;
   display: block;
+  padding: 12px 22px;
 }
 
 .vega-embed > div {
@@ -122,6 +123,7 @@ section {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
+  overflow: visible;
 }
 
 .vega-embed canvas {
@@ -187,7 +189,11 @@ section {
   }
 
   .chart {
-    padding: 20px 14px;
+    padding: 28px 22px;
+  }
+
+  .vega-embed {
+    padding: 8px 10px;
   }
 
   .chart-analysis {

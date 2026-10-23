@@ -12,11 +12,6 @@
   },
   "width": "container",
   "height": 280,
-  "autosize": {
-  "type": "fit",
-  "contains": "padding",
-  "resize": true
-},
   "data": {
     "values": [
       {
@@ -258,5 +253,11 @@
         "#D9A66C"
       ]
     }
+  },
+  "padding": {
+    "left": 38,
+    "right": 70,
+    "top": 30,
+    "bottom": 45
   }
 }
