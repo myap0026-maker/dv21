@@ -175,21 +175,20 @@ section {
 ========================= */
 
 .chart-analysis {
+  position: relative;
+  clear: both;
+  width: 100%;
   margin: 0 0 10px;
   padding: 20px 22px;
-
   background: #fff4dc;
-
   border-left: 4px solid #c47a16;
   border-right: 1px solid #e2d4ba;
   border-bottom: 1px solid #e2d4ba;
-
   font-size: .98rem;
   line-height: 1.75;
-
   color: #493b2e;
+  z-index: 1;
 }
-
 
 /* =========================
    SOURCES
@@ -241,8 +240,9 @@ section {
   }
 
   .chart {
-    padding: 8px;
-  }
+  padding: 24px 18px 35px;
+  margin-bottom: 20px;
+}
 
   .chart-analysis {
     padding: 16px;
