@@ -132,20 +132,13 @@ section {
   padding: 22px;
   background: #fff9ee;
   border: 1px solid #e2d4ba;
-
-  /*
-  Prevent the whole webpage from
-  requiring horizontal scrolling.
-  */
-  overflow-x: auto;
+  overflow: hidden;
 }
 
 .vega-embed {
   width: 100%;
-}
-
-.vega-embed summary {
-  display: none;
+  display: flex;
+  justify-content: center;
 }
 
 

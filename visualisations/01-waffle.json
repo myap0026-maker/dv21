@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "background": "#FFFDF8",
+  "background": "#FFF9EE",
 
   "title": {
     "text": "01 · Commercial beekeepers are a small minority",
@@ -11,11 +11,12 @@
     "subtitleFontSize": 12,
     "subtitleFontWeight": "normal",
     "subtitleColor": "#6D6257",
-    "offset": 14
+    "color": "#3F3023",
+    "offset": 18
   },
 
-  "width": 700,
-  "height": 280,
+  "width": 600,
+  "height": 300,
 
   "data": {
     "sequence": {
@@ -37,14 +38,15 @@
     },
     {
       "calculate": "datum.id < 6 ? 'Commercial' : 'Recreational'",
-      "as": "Beekeeper type"
+      "as": "BeekeeperType"
     }
   ],
 
   "mark": {
     "type": "square",
-    "size": 360,
-    "cornerRadius": 2
+    "size": 500,
+    "stroke": "#FFFDF8",
+    "strokeWidth": 1
   },
 
   "encoding": {
@@ -62,8 +64,9 @@
     },
 
     "color": {
-      "field": "Beekeeper type",
+      "field": "BeekeeperType",
       "type": "nominal",
+      "title": "Beekeeper type",
       "scale": {
         "domain": [
           "Commercial",
@@ -83,7 +86,7 @@
 
     "tooltip": [
       {
-        "field": "Beekeeper type",
+        "field": "BeekeeperType",
         "type": "nominal",
         "title": "Beekeeper type"
       }
@@ -91,23 +94,19 @@
   },
 
   "config": {
-    "font": "Arial",
+    "font": "DM Sans",
 
-    "title": {
-      "font": "Arial",
-      "subtitleFont": "Arial",
-      "color": "#3F3023"
+    "view": {
+      "stroke": null
     },
 
     "legend": {
+      "labelFont": "DM Sans",
+      "titleFont": "DM Sans",
       "labelFontSize": 12,
       "titleFontSize": 12,
       "labelColor": "#5C5147",
       "titleColor": "#493D32"
-    },
-
-    "view": {
-      "stroke": null
     }
   }
 }
