@@ -128,17 +128,44 @@ section {
 
 .chart {
   width: 100%;
-  margin: 0;
-  padding: 22px;
+  margin: 0 0 24px;
+  padding: 35px 45px 45px;
   background: #fff9ee;
   border: 1px solid #e2d4ba;
-  overflow: hidden;
+  border-radius: 8px;
+  overflow: visible;
+  position: relative;
 }
 
 .vega-embed {
   width: 100%;
-  display: flex;
-  justify-content: center;
+  max-width: 100%;
+  display: block;
+  position: relative;
+}
+
+.vega-embed > div {
+  width: 100%;
+  max-width: 100%;
+}
+
+.vega-embed svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.vega-embed canvas {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.vega-embed summary {
+  display: none;
 }
 
 
