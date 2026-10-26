@@ -3,6 +3,9 @@ const opts = {
   renderer: "svg"
 };
 
+/* =========================
+   CHARTS IN ORDER
+========================= */
 const charts = [
   "01-waffle.json",
   "02-beekeepers.json",
